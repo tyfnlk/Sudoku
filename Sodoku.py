@@ -18,15 +18,10 @@ for i in range(n):
 
 print(list)
 
-class Board:
-    def print(self,list[]):
-        for i in range(n):
-            for j in range(n):
-                print(list[(9*i) +j])
-        print("\n")
-
-Board.print(list)
-
+for i in range(n):
+    for j in range(n):
+        print(list[(i*9)+j], " ", end = '')
+    print()
 
 
 
