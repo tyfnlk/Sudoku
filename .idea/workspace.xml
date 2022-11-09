@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a510d245-dc74-4026-ad2a-2e082f988958" name="Changes" comment="read input, show board">
+    <list default="true" id="a510d245-dc74-4026-ad2a-2e082f988958" name="Changes" comment="added helper function">
+      <change afterPath="$PROJECT_DIR$/.idea/sudoku9TB1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudoku9TB1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sodoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sodoku.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +30,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Terry/PycharmProjects/Sudoku"
   }
 }]]></component>
@@ -51,7 +55,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667891920548</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added helper function">
+      <created>1667967552321</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667967552321</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added helper function">
+      <created>1667967595419</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667967595419</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -67,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="read input, show board" />
-    <option name="LAST_COMMIT_MESSAGE" value="read input, show board" />
+    <MESSAGE value="added helper function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added helper function" />
   </component>
 </project>
