@@ -1,5 +1,9 @@
-
-
+"""
+Terry Leeshanok
+COSC 3117
+ID#229685780
+Assignment 4
+"""
 # initialize variable to hold n
 n = 0
 
