@@ -1,27 +1,25 @@
+
+
 # initialize variable to hold n
 n = 0
-
-
 
 #ask user for file to import
 filename = input("enter file name ")
 
-#save new file namee for export later
+#save new file name for export later
 fileout = filename.replace(".txt","Solution.txt")
-
 
 # open input file as 'f'
 with open(filename, 'r') as f:
 
     # read the first line in input file and save as n
     n = int(f.readline().strip())
-
-    # save remainder of data to a variable
+    # save remainder of data
     data = f.readlines()
 
 
 list = []
-# remove every all teh spaces and cast each char into an int and save to a list
+# remove every all the spaces and cast each char into an int and save to a list
 for i in range(n):
     for j in range(n):
         list.append(int(data[i][j * 2]))
@@ -32,8 +30,7 @@ board = [[i for i in range(n)] for x in range(n)]
 for i in range(n * n):
     board[int(i / n)][i % n] = list[i]
 
-
-
+#creat sudoku class
 class Sudoku:
     def __init__(self, board: [[]]):
         #save board
@@ -42,9 +39,11 @@ class Sudoku:
         self.n = len(board[0])
         #success tracker
         self.success = 0
-        self.solved = board
+        self.solved =[]
+        #exit if n not 9
         if self.n != 9:
             print("invalid board")
+            SystemExit()
         print("puzzle")
         self.printBoard()
 
@@ -56,7 +55,7 @@ class Sudoku:
             print(board[i])
         print("---" * n)
 
-#function to check if board is completed
+#function to check if board is solved
     def isSolved(self):
 
         for x in range(n * n):
@@ -172,11 +171,11 @@ class Sudoku:
                             return False
                 return True
 
-    # method to print board easily
+    # method to set value in position
     def set(self, position: int, value: int):
         board[int(position / n)][position % n] = value
 
-
+    #recursive function to solve sudoku
     def solve(self):
         # base case
         #when solved print board and output to file
@@ -200,7 +199,7 @@ class Sudoku:
                         self.set(i, j)
                         #recursive call
                         self.solve()
-                    #if recursive call fails, backtrack by resetting position
+                    #if recursive call fails, backtrack by resetting position i
                     self.set(i, 0)
                 return
 
@@ -222,6 +221,7 @@ class Sudoku:
 
 #create sudoku instance
 sud = Sudoku(board)
+#call solve function
 sud.solve()
 #write output in fail case
 if sud.success == 0:
